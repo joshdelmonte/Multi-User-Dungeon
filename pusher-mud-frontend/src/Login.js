@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import races from './races';
 import classes from './classes';
-import './login.css';
+import './css/login.css';
 
 class Login extends Component {
     constructor(props) {
