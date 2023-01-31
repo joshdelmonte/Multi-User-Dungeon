@@ -1,0 +1,11 @@
+{
+    "doors": {
+        "enter": {
+            "state": "arch"
+        }
+        "room-1-corridor-1-1": {
+            "state": "closed"
+        }
+    }
+}
+"rooms"
