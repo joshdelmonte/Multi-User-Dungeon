@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Game.css';
+import './css/Game.css';
 import CharacterDetails from './CharacterDetails';
 import CharacterList from './CharacterList';
 import pusher from './pusher';
@@ -17,7 +17,7 @@ class Game extends Component {
 
     render() {
         return (
-            <div className="row">
+            <div className="row tempBackgroundColor1">
                 <div className="col-8">
                     <div className="game-roomDescription">
                         Room Description Here

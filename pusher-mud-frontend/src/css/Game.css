@@ -1,3 +1,5 @@
+@import './fonts.css';
+
 .game-roomDescription {
     min-height: 10em;
 }
@@ -9,3 +11,8 @@
 }
 .game-playerList {
 }
+
+.tempBackgroundColor1 {
+    background-color: #222;
+    color: white;
+  }
