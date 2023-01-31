@@ -5,10 +5,10 @@
   "main": "server/server.js",
   "scripts": {
     "start": "node server --ignore client",
-    "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
-    "install": "cd server && npm i && cd ../client && npm i",
-    "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build"
+    "develop": "concurrently \"cd pusher-mud-backend && npm run start\" \"cd pusher-mud-frontend && npm start\"",
+    "install": "cd pusher-mud-backend && npm i && cd ../pusher-mud-frontend && npm i",
+    "seed": "cd pusher-mud-backend && npm run seed",
+    "build": "cd pusher-mud-frontend && npm run build"
   },
   "keywords": [],
   "author": "",
