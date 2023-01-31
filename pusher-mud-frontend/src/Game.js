@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Game.css';
+import './css/Game.css';
 import CharacterDetails from './CharacterDetails';
 import CharacterList from './CharacterList';
 import pusher from './pusher';
