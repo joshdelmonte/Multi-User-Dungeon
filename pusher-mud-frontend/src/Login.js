@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import races from './races';
 import classes from './classes';
+import './login.css';
 
 class Login extends Component {
     constructor(props) {
@@ -24,7 +25,7 @@ class Login extends Component {
         const classesOptions = classes.map((cls) => <option value={cls.id}>{cls.name}</option>);
 
         return (
-            <div className="row justify-content-center">
+            <div className="row justify-content-center tempBackgroundColor">
                 <div className="col-sm-6 col-md-4">
                     <div className="card">
                         <div className="card-body">
