@@ -16,3 +16,41 @@
     background-color: #222;
     color: white;
   }
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainBackground {
+    background-image: url("../assets/images/darkerForest.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+}
+
+.normText {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    color: white;
+    font-size: 20pt;
+}
+
+.topLogo {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    color: white;
+    font-size: 60pt;
+    text-align: center;
+    background-color: rgba(77,0,0,1);
+    padding: 3%;
+    border-radius: 0pt 0pt 30pt 30pt;
+    margin-bottom: 20pt;
+}
+
+.headerBox {
+    display: flex;
+    justify-content: center;
+}

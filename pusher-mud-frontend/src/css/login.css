@@ -41,6 +41,7 @@
   width: auto;
 }
 
+/* loginCard is not currently visible. To make it visible change transparency in background color to 1 */
 .loginCard {
   background-color: rgba(84,84,84,.0);
   border-radius: 30pt;
@@ -50,6 +51,11 @@
   background-color: rgba(77,0,0,1);
   border-radius: 15pt;
   margin-top: 10%;
+  box-shadow: -7px 7px 7px rgb(77,0,0, .6);
+}
+
+.btn:hover {
+  background-color: rgb(54, 0, 0)
 }
 
 .card-body {
@@ -66,11 +72,12 @@
   font-family: 'Amatic SC', cursive;
   border-radius: 10px;
   text-align: center;
-  width: -webkit-fill-available;
+  width: stretch;
   height: 50px;
   font-size: xx-large;
   box-shadow: -10px 10px 5px rgb(40, 40, 40, .6);
   margin-top: 10%;
+  border-style: inset;
 }
 
 ::placeholder {

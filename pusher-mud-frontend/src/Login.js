@@ -33,7 +33,7 @@ class Login extends Component {
                 <div className="col-sm-10 col-md-4">
                     <div className="box card loginCard">
                         <div className="card-body">
-                            <h4 className="card-title">Join Game</h4>
+                            <h4 className="card-title">Your Character</h4>
                             <form onSubmit={ this._handleLogin }>
                                 <div className="form-group">
                                     {/* <label htmlFor="characterName" className='normalText'>Name</label> */}
