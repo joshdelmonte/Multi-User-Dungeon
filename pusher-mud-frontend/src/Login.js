@@ -25,30 +25,34 @@ class Login extends Component {
         const classesOptions = classes.map((cls) => <option value={cls.id}>{cls.name}</option>);
 
         return (
-            <div className="row justify-content-center tempBackgroundColor">
-                <div className="col-sm-6 col-md-4">
-                    <div className="card">
+            <div className="row justify-content-center primeBackground">
+                <div className="box col-sm-10 col-md-5">
+                    <h3 className='titleMessage'>Welcome To</h3>
+                    <h1 className='titleLogo'>Dark-er Forest</h1>
+                </div>
+                <div className="col-sm-10 col-md-4">
+                    <div className="box card loginCard">
                         <div className="card-body">
                             <h4 className="card-title">Join Game</h4>
                             <form onSubmit={ this._handleLogin }>
                                 <div className="form-group">
-                                    <label htmlFor="characterName">Name</label>
-                                    <input type="text" className="form-control" id="characterName" placeholder="Enter name" value={ name } onChange={ this._handleNameChange }/>
+                                    {/* <label htmlFor="characterName" className='normalText'>Name</label> */}
+                                    <input type="text" className="characterInputBox" id="characterName" placeholder="Enter name" value={ name } onChange={ this._handleNameChange }/>
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="characterRace">Race</label>
-                                    <select id="characterRace" className="form-control" value={ race } onChange={ this._handleRaceChange }>
+                                    {/* <label htmlFor="characterRace" className='normalText'>Race</label> */}
+                                    <select id="characterRace" className="characterInputBox" value={ race } onChange={ this._handleRaceChange }>
                                         { racesOptions }
                                     </select>
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="characterClass">Class</label>
-                                    <select id="characterClass" className="form-control" value={ cls } onChange={ this._handleClassChange }>
+                                    {/* <label htmlFor="characterClass" className='normalText'>Class</label> */}
+                                    <select id="characterClass" className="characterInputBox" value={ cls } onChange={ this._handleClassChange }>
                                         { classesOptions }
                                     </select>
                                 </div>
                                 <div className="form-group">
-                                    <input type="submit" className="btn btn-primary" value="Join Game" />
+                                    <input type="submit" className="btn  normalText" value="Join Game" />
                                 </div>
                             </form>
                         </div>
