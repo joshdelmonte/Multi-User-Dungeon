@@ -1,0 +1,22 @@
+{
+  "name": "programming-thoughts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server --ignore client",
+    "develop": "concurrently \"cd pusher-mud-backend && npm run start\" \"cd pusher-mud-frontend && npm start\"",
+    "install": "cd pusher-mud-backend && npm i && cd ../pusher-mud-frontend && npm i",
+    "seed": "cd pusher-mud-backend && npm run seed",
+    "build": "cd pusher-mud-frontend && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "mongoose": "^6.9.0"
+  }
+}

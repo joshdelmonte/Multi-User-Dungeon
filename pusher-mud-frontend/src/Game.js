@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Game.css';
+import './css/Game.css';
 import CharacterDetails from './CharacterDetails';
 import CharacterList from './CharacterList';
 import RoomDescription from './RoomDescription';
@@ -159,6 +159,7 @@ class Game extends Component {
                     </div>
                     <div className="game-playerList">
                         <CharacterList room={ this.state.room } key={this.state.room} />
+
                     </div>
                 </div>
             </div>
