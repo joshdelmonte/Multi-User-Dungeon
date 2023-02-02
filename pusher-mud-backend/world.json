@@ -1,11 +1,52 @@
 {
     "doors": {
-        "enter": {
-            "state": "arch"
+      "enter": {
+        "state": "arch"
+      },
+      "room-1-corridor-1-8": {
+        "state": "closed"
+      }
+    },
+    "rooms": {
+      "start": {
+        "description": "You eyes open, from darkness to light. Entombed in stone, there is no way back. No way out, but forward.  ",
+        "exits": {
+          "south": {
+            "name": "Enter",
+            "door": "enter"
+          }
         }
-        "room-1-corridor-1-1": {
-            "state": "closed"
+      },
+      "room-1": {
+        "description": "A shallow pit lies in the north side of the room. The north and west walls are covered with cracks",
+        "exits": {
+          "north": {
+            "name": "Exit",
+            "door": "enter"
+          },
+          "south": {
+            "name": "South",
+            "door": "room-1-corridor-1-8"
+          }
         }
+      },
+      "corridor-1-8": {
+        "description": "The corridor has flagstone flooring and reinforced masonry walls.",
+        "exits": {
+          "north": {
+            "name": "North",
+            "door": "room-1-corridor-1-8"
+          }
+        }
+      },
+      "room-8": {
+        "description": "Bones litter the floor where you stand. Are they the remnants of a battle or a feast?",
+        "exits": {
+            "east": {
+                "name": "Back to the corridor",
+                "door": "corridor-8-10"
+            }
+        }
+      }
     }
-}
-"rooms"
+  }
