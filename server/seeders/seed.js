@@ -20,8 +20,6 @@ db.once('open', async () => {
           },
         }
       );
-      const monster = await Monster.findOneAndUpdate(
-        
     }
   } catch (err) {
     console.error(err);

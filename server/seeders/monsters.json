@@ -1,0 +1,50 @@
+[
+    {
+        
+        "name": "rat",
+        "index": 1,
+        "hit_points": 20,
+        "attack_points": 2,
+        loot: 'dagger'
+      },
+      {
+        
+        name: 'goblin',
+        index: 2,
+        hit_points: 25,
+        attack_points: 3,
+        loot: 'sword'
+      },
+      {
+        
+        name: 'bat',
+        index: 3,
+        hit_points: 20,
+        attack_points: 3,
+        loot: 'spear'
+      },
+      {
+        
+        name: 'wolf',
+        index: 4,
+        hit_points: 24,
+        attack_points: 3,
+        loot: 'staff'
+      },
+      {
+        
+        name: 'skeleton',
+        index: 5,
+        hit_points: 19,
+        attack_points: 2,
+        loot: 'kanabo'
+      }
+      {
+        
+        name: 'slime',
+        index: 6,
+        hit_points: 5,
+        attack_points: 2,
+        loot: 'health potion'
+      },
+]

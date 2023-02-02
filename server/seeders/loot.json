@@ -1,0 +1,44 @@
+[
+    {
+    
+        "name": "dagger",
+        "index": 1,
+        "attack_power": 10,
+        "monster_origin": "rat"
+      },
+      {
+      
+        "name": "sword",
+        "index": 2,
+        "attack_power": 15,
+        "monster_origin": "goblin"
+      },
+      {
+        
+        "name": "spear",
+        "index": 3,
+        "attack_power": 20,
+        "monstr_origin": "bat"
+      },
+      {
+        
+       "name": "staff",
+        "index": 4,
+        "attack_power": 25,
+        "monster_origin": "wolf"
+      },
+      {
+        
+        "name": "kanabo",
+        "index": 5,
+        "attack_power": 30,
+        "monster_origin": "skeleton"
+      },
+      {
+        
+        "name": "health potion",
+        "index": 6,
+        "attack_power": 2,
+        "monster_origin": "slime"
+      }
+]
