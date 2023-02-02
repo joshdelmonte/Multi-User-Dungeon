@@ -4,7 +4,75 @@
     background-color: #222;
   }
 
-h4 {
+.normalText {
   font-family: 'Amatic SC', cursive;
   font-weight: bold;
+  color: white;
+  font-size: 20pt;
+}
+
+.titleMessage {
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  color: white;
+  font-size: 40pt;
+}
+
+.titleLogo {
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  color: white;
+  font-size: 70pt;
+}
+
+.card-title {
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  color: white;
+  font-size: 35pt;
+}
+
+.primeBackground {
+  background-image: url("../assets/images/darkerForest.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+}
+
+.loginCard {
+  background-color: rgba(84,84,84,.0);
+  border-radius: 30pt;
+}
+
+.btn {
+  background-color: rgba(77,0,0,1);
+  border-radius: 15pt;
+  margin-top: 10%;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.box{
+  margin-top: 10%;
+}
+
+.characterInputBox {
+  background-color: rgba(84,84,84,1);
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  border-radius: 10px;
+  text-align: center;
+  width: -webkit-fill-available;
+  height: 50px;
+  font-size: xx-large;
+  box-shadow: -10px 10px 5px rgb(40, 40, 40, .6);
+  margin-top: 10%;
+}
+
+::placeholder {
+  color: white;
 }
