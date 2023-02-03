@@ -139,27 +139,34 @@ class Game extends Component {
 
     render() {
         return (
-            <div className="row">
-                <div className="col-8">
-                    <div className="game-roomDescription">
-                        <RoomDescription room={ this.state.room } exitRoomHandler={this._handleExitRoom} />
+            <div className="row mainBackground mainContainer">
+                <header className='headerBox'>
+                    <div className='col-md-6 col-sm-12'>
+                        <h1 className='topLogo'>Dark-er Forest</h1>
                     </div>
-                    <div className="game-messageLog">
-                        <Messages messages={this.state.messages} />
+                </header>
+                <div className="gameContainer">
+                    <div className="col-md-8 col-sm-5">
+                        <div className="game-roomDescription normText gameSection1">
+                            <RoomDescription room={ this.state.room } exitRoomHandler={this._handleExitRoom} />
+                        </div>
+                        <div className="game-messageLog normText gameSection1">
+                            <Messages messages={this.state.messages} />
+                        </div>
+                        <div>
+                            <form onSubmit={this._handleCommand}>
+                                <input type="text" className="form-control normText" placeholder="Enter command" ref={(input) => { this.commandInput = input; }} />
+                            </form>
+                        </div>
                     </div>
-                    <div>
-                        <form onSubmit={this._handleCommand}>
-                            <input type="text" className="form-control" placeholder="Enter command" ref={(input) => { this.commandInput = input; }} />
-                        </form>
-                    </div>
-                </div>
-                <div className="col-4">
-                    <div className="game-characterDetails">
-                        <CharacterDetails player={ this.props.player } />
-                    </div>
-                    <div className="game-playerList">
-                        <CharacterList room={ this.state.room } key={this.state.room} />
 
+                    <div className="col-md-4 col-sm-5">
+                        <div className="game-characterDetails normText gameSection2">
+                            <CharacterDetails player={ this.props.player } />
+                        </div>
+                        <div className="game-playerList normText gameSection2">
+                            <CharacterList room={ this.state.room } key={this.state.room} />
+                        </div>
                     </div>
                 </div>
             </div>
