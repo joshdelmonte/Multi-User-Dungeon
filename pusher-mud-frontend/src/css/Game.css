@@ -7,7 +7,7 @@
     min-height: 20em;
 }
 .game-characterDetails {
-    min-height: 10em;
+    min-height: 5em;
 }
 .game-playerList {
 }
@@ -42,7 +42,7 @@
     font-family: 'Amatic SC', cursive;
     font-weight: bold;
     color: white;
-    font-size: 60pt;
+    font-size: 50pt;
     text-align: center;
     background-color: rgba(77,0,0,1);
     padding: 3%;
@@ -53,4 +53,26 @@
 .headerBox {
     display: flex;
     justify-content: center;
+    height: 12%;
+}
+
+.gameContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.gameSection1 {
+    background-color: rgba(84,84,84,.75);
+    border-radius: 30pt;
+    padding: 5%;
+    margin: 5% 5% 5% 5%;
+}
+
+.gameSection2 {
+    background-color: rgba(84,84,84,.75);
+    border-radius: 30pt;
+    padding: 5%;
+    margin: 10% 5% 5% 5%;
 }
