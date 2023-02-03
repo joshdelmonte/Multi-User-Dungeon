@@ -24,11 +24,15 @@ To use this application, open the url in the browser, create a user profile and 
 MIT License 
 
 # The Team
+
 Josh DelMonte
 * GitHub: github.com/joshdelmonte
+
 Brandon Doenges
 * GitHub: github.com/DoengesBD
+
 Reed Dahltorp
 * GitHub: github.com/rdahltorp
+
 Danielle Cavinder
 * GitHub: github.com/dcavinder
