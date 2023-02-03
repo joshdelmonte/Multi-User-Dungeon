@@ -1,29 +1,46 @@
-const Monsters = mongoose.model('Monsters', new mongoose.Schema({
+const Monster = require('./Monster');
+const { Schema } = require('mongoose');
 
+const monsterSchema = new Schema({
     name: {
         type: String,
         required: true,
-        minlength: 2.
+        trim: true,
     },
     index: {
-        type: Number,
+        type: String,
         required: true,
-        minlength: 2.
+        trim: true,
     },
     hit_points: {
         type: Number,
         required: true,
-        minlength: 2.
+        trim: true,
     },
     attack_points: {
         type: Number,
         required: true,
-        minlength: 2.
-    },  
+        trim: true,
+    },
     loot: {
-        model: 'Loot',
-},
-}));
+        type: String,
+        required: true,
+        trim: true,
+        model: Loot,   
+    },
+});
 
-module.exports = Monsters;
+const Monster = model('Monster', monsterSchema);
+async function syncData() {
+    for (let monsterData of seedData) {
+      const monster = new Monster(monsterData);
+      await monster.save();
+    }
+    console.log('Dungeon synced successfully!');
+  }
+  
+  syncData();
+//   This code connects to the MongoDB database at mongodb://localhost:27017/your_db and creates a new instance of the Monster model for each piece of data in monsterData. The save method is called on each instance, which saves it to the database.
+  
 
+module.exports = { Monster, Loot };
