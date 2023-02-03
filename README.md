@@ -29,7 +29,7 @@ Josh DelMonte
 * GitHub: github.com/joshdelmonte
 
 Brandon Doenges
-* GitHub: github.com/DoengesBD
+* GitHub: github.com/DoengesBA
 
 Reed Dahltorp
 * GitHub: github.com/rdahltorp
