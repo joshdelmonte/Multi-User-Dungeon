@@ -1,20 +1,34 @@
 # Multi-User-Dungeon
-A mini dungeons and dragons inspired game with character creation and adventure!
+# The Dark-er Forest
 
-#Title
+# Table of Contents 
+* [Description](#-Description)
+* [Demo](#-Demo)
+* [Installation](#-Installation)
+* [Usage](#-Usage)
+* [License](#-License)
+* [The Team](#-The-Team)
 
-## Subtitle [Very short one liner about what it does]
+# Description
+The Dark-er Forest is a multi-user dungeon crawler. The user will first create an account with a custom character by selecting a name , race, and class. This application is meant to excite the user by throwing them straight into a mysterious, whimsical, and thrilling adventure into the fictional world of the Dark-er Forst. The user is prompted with options for different action like entering and exiting rooms, fighting monsters, and how they'd like to deliver their attacks. Attack damage is calcualted but a simulated dice roll and characters lose health points as monsters fight back. As the user crawls through the dungeon they pick up loot and kill monsters to ultimately be the player with the most loot and monsters conquered by the end of the game.
 
-Intro Paragraph - Get SEO value! Embed searchable words
+# Demo
 
-## Visual Helper - Image, Wireframe, Etc.
-    ![alt text] (http://url/to/img.png)
-    <img src= "URLtoVideo" alt="" width="" height= border="">
+# Installation
+clone this repository onto your local machine, Run the command npm i to install npm packages, install mongoDB, install npm roll.
 
-## User Instructions - Step by step instructions if possible
+# Usage
+To use this application, open the url in the browser, create a user profile and a custom character by selecting a name, race, and class. Then start the game and navigate through the prompts.
 
-Developer Instructions - Downloading / Compiling Sources
+# License 
+MIT License 
 
-Expectations towards Contributors
-
-Known Issues
+# The Team
+* Josh DelMonte
+* GitHub: github.com/joshdelmonte
+* Brandon Doenges
+* GitHub: github.com/DoengesBD
+* Reed Dahltorp
+* GitHub: github.com/rdahltorp
+* Danielle Cavinder
+* GitHub: github.com/dcavinder
