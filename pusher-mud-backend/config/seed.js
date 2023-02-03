@@ -10,7 +10,7 @@ db.once('open', async () => {
     { name : 'Bat', id: 3, hit_points: 5, attack_points: 1, loot: loots[3] },
     { name: 'Wolf', id: 4, hit_points: 15, attack_points: 3, loot: loots[4] },
     { name: 'Skeleton', id: 5, hit_points: 25, attack_points: 5, loot: loots[5] },
-    { name: 'Slime', id: 6, hit_points: 10, attack_points: 0, loot: loots[6] }
+    { name: 'Slime', id: 6, hit_points: 1, attack_points: 0, loot: loots[6] }
     ]);
 
     console.log('monsters seeded');
