@@ -101,5 +101,9 @@
     .headerBox {
         position: sticky;
         top: 0px;
+        z-index: 1;
+    }
+    .game-messageLog {
+        min-height: 10em;
     }
 }
