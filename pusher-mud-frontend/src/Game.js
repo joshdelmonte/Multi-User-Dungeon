@@ -161,7 +161,7 @@ class Game extends Component {
                     </div>
 
                     <div className="col-md-4 col-sm-5">
-                        <div className="game-characterDetails normText gameSection2">
+                        <div className="game-characterDetails characterDets gameSection2">
                             <CharacterDetails player={ this.props.player } />
                         </div>
                         <div className="game-playerList normText gameSection2">
