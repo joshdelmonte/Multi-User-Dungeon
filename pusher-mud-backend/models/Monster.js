@@ -1,11 +1,12 @@
-const Monsters = mongoose.model('Monsters', new mongoose.Schema({
+const mongoose = require('mongoose');
+const Monster = mongoose.model('Monster', new mongoose.Schema({
 
     name: {
         type: String,
         required: true,
         minlength: 2.
     },
-    index: {
+    id: {
         type: Number,
         required: true,
         minlength: 2.
@@ -15,15 +16,18 @@ const Monsters = mongoose.model('Monsters', new mongoose.Schema({
         required: true,
         minlength: 2.
     },
-    attack_points: {
+    attack_power: {
         type: Number,
         required: true,
         minlength: 2.
     },  
     loot: {
-        model: 'Loot',
+        type: mongoose.Schema.Types.ObjectId,
+        allowNull: true,
+        default: null,
+        ref: 'Loot',
 },
 }));
 
-module.exports = Monsters;
+module.exports = Monster;
 

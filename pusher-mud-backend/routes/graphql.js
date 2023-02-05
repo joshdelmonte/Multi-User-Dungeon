@@ -7,29 +7,24 @@ const GraphqlSchema = `
 type Door {
     name: ID!
     state: String!
-}
-
+},
 type Exit {
     name: ID!
     description: String!
     door: Door!
-}
-
+},
 type Room {
     name: ID!
     description: String!
     exits: [Exit!]!
-}
-
+},
 type Query {
     version: String
     room(name: ID!) : Room
-}
-
+},
 type ExitRoomError {
     reason: ID!
-}
-
+},
 union ExitRoomResult = Room | ExitRoomError
 
 type Mutation {
