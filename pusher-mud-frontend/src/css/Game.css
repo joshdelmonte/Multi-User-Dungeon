@@ -1,5 +1,9 @@
 @import './fonts.css';
 
+body, html {
+    height: 100%;
+}
+
 .game-roomDescription {
     min-height: 10em;
 }
@@ -27,7 +31,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     width: auto;
 }
 
@@ -62,6 +66,9 @@
     justify-content: center;
     width: min(100% - 30px, 840px);
     margin-inline: auto;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 }
 
 .gameContainer {
@@ -69,6 +76,7 @@
     flex-direction: row;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 10%;
 }
 
 .gameSection1 {
@@ -92,16 +100,8 @@
     .mainContainer {
         flex-direction: row; 
     }
-    .form-control{
-        margin-bottom: 10%;
-    }
     .mainBackground {
         height: 100%;
-    }
-    .headerBox {
-        position: sticky;
-        top: 0px;
-        z-index: 1;
     }
     .game-messageLog {
         min-height: 10em;
