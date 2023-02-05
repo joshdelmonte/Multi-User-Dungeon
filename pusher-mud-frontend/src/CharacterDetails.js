@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import races from './races';
 import classes from './classes';
+import './css/characterDetails.css'
 
 class CharacterDetails extends Component {
     render() {
@@ -12,26 +13,26 @@ class CharacterDetails extends Component {
             <div>
                 <div className="row">
                     <div className="col-2">
-                        <b>Name</b>
+                        <b>Name: </b>
                     </div>
-                    <div className="col-10">
-                        { player.name }
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-2">
-                        <b>Race</b>
-                    </div>
-                    <div className="col-10">
-                        { race.name }
+                    <div className="col-10 characterDetails">
+                        <p>{ player.name }</p>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-2">
-                        <b>Class</b>
+                        <b>Race: </b>
                     </div>
-                    <div className="col-10">
-                        { cls.name }
+                    <div className="col-10 characterDetails">
+                        <p>{ race.name }</p>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-2">
+                        <b>Class: </b>
+                    </div>
+                    <div className="col-10 characterDetails">
+                        <p>{ cls.name }</p>
                     </div>
                 </div>
             </div>

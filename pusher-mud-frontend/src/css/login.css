@@ -1,9 +1,5 @@
 @import './fonts.css';
 
-.tempBackgroundColor {
-    background-color: #222;
-  }
-
 .normalText {
   font-family: 'Amatic SC', cursive;
   font-weight: bold;
