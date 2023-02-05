@@ -1,9 +1,10 @@
+const mongoose = require('mongoose');
 const Loot = mongoose.model('Loot', new mongoose.Schema({
     name: {
         type: String,
         required: true,
     },
-    index: {
+    id: {
         type: Number,
         required: true,
     },
@@ -12,8 +13,11 @@ const Loot = mongoose.model('Loot', new mongoose.Schema({
         required: true,
     },
     monster_origin: {
-        type: String,
-        required: true,
-        model: 'Monsters',
+        type: mongoose.Schema.Types.ObjectId,
+        allowNull: true,
+        default: null,
+        ref: 'Monster',
     },
 }));
+
+module.exports = Loot;
