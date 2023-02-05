@@ -146,7 +146,7 @@ class Game extends Component {
                     </div>
                 </header>
                 <div className="gameContainer">
-                    <div className="col-md-8 col-sm-10">
+                    <div className="col-md-8 col-sm-6">
                         <div className="game-roomDescription normText gameSection1">
                             <RoomDescription room={ this.state.room } exitRoomHandler={this._handleExitRoom} />
                         </div>
@@ -160,7 +160,7 @@ class Game extends Component {
                         </div>
                     </div>
 
-                    <div className="col-md-4 col-sm-10">
+                    <div className="col-md-4 col-sm-5">
                         <div className="game-characterDetails characterDets gameSection2">
                             <CharacterDetails player={ this.props.player } />
                         </div>
