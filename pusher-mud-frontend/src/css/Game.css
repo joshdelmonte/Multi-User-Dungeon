@@ -1,10 +1,14 @@
 @import './fonts.css';
 
+body, html {
+    height: 100%;
+}
+
 .game-roomDescription {
     min-height: 10em;
 }
 .game-messageLog {
-    min-height: 20em;
+    min-height: 16em;
 }
 .game-characterDetails {
     min-height: 5em;
@@ -27,7 +31,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     width: auto;
 }
 
@@ -36,6 +40,13 @@
     font-weight: bold;
     color: white;
     font-size: 20pt;
+}
+
+.characterDets {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    color: white;
+    font-size: 18pt;
 }
 
 .topLogo {
@@ -53,7 +64,11 @@
 .headerBox {
     display: flex;
     justify-content: center;
-    height: 12%;
+    width: min(100% - 30px, 840px);
+    margin-inline: auto;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 }
 
 .gameContainer {
@@ -61,18 +76,34 @@
     flex-direction: row;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 10%;
 }
 
 .gameSection1 {
     background-color: rgba(84,84,84,.75);
     border-radius: 30pt;
-    padding: 5%;
+    padding: 7%;
     margin: 5% 5% 5% 5%;
 }
 
 .gameSection2 {
     background-color: rgba(84,84,84,.75);
     border-radius: 30pt;
-    padding: 5%;
+    padding: 7%;
     margin: 10% 5% 5% 5%;
+}
+
+@media screen and (max-width: 425px) {
+    .gameContainer {
+        flex-direction: column-reverse; 
+    }
+    .mainContainer {
+        flex-direction: row; 
+    }
+    .mainBackground {
+        height: 100%;
+    }
+    .game-messageLog {
+        min-height: 10em;
+    }
 }
