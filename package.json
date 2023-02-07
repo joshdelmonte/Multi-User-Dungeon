@@ -4,7 +4,7 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
-    "start": "cd pusher-mud-backend && node server --ignore client",
+    "start": "cd pusher-mud-backend && node server.js --ignore client",
     "develop": "concurrently \"cd pusher-mud-backend && npm run start\" \"cd pusher-mud-frontend && npm start\"",
     "install": "cd pusher-mud-backend && npm i && cd ../pusher-mud-frontend && npm i",
     "seed": "cd pusher-mud-backend && npm run seed",
@@ -17,6 +17,6 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
-    "mongoose": "^6.9.0"
+    "apollo-server-express": "^3.0.0-rc.1"
   }
 }
