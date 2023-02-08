@@ -1,22 +1,27 @@
 {
-  "name": "programming-thoughts",
+  "name": "multi-user-dungeon",
   "version": "1.0.0",
-  "description": "",
-  "main": "server/server.js",
+  "description": "# Table of Contents  * [Description](#-Description) * [Demo](#-Demo) * [Installation](#-Installation) * [Usage](#-Usage) * [License](#-License) * [The Team](#-The-Team)",
+  "main": "pusher-mud-backend/server.js",
   "scripts": {
-    "start": "cd pusher-mud-backend && node server.js --ignore client",
+    "start": "cd pusher-mud-backend && node server.js",
     "develop": "concurrently \"cd pusher-mud-backend && npm run start\" \"cd pusher-mud-frontend && npm start\"",
     "install": "cd pusher-mud-backend && npm i && cd ../pusher-mud-frontend && npm i",
     "seed": "cd pusher-mud-backend && npm run seed",
     "build": "cd pusher-mud-frontend && npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshdelmonte/Multi-User-Dungeon.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshdelmonte/Multi-User-Dungeon/issues"
+  },
+  "homepage": "https://github.com/joshdelmonte/Multi-User-Dungeon#readme",
   "devDependencies": {
     "concurrently": "^5.1.0"
-  },
-  "dependencies": {
-    "apollo-server-express": "^3.0.0-rc.1"
   }
 }
