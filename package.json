@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
+  "homepage": "https://joshdelmonte.github.io/Multi-User-Dungeon",
   "scripts": {
     "start": "cd pusher-mud-backend && node server --ignore client",
     "develop": "concurrently \"cd pusher-mud-backend && npm run start\" \"cd pusher-mud-frontend && npm start\"",
     "install": "cd pusher-mud-backend && npm i && cd ../pusher-mud-frontend && npm i",
     "seed": "cd pusher-mud-backend && npm run seed",
-    "build": "cd pusher-mud-frontend && npm run build"
+    "build": "cd pusher-mud-frontend && npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +20,7 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "mongoose": "^6.9.0"
   }
 }
