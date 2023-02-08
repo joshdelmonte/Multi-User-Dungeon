@@ -1,9 +1,10 @@
 const users = require('../users');
 const graphqlTools = require('graphql-tools');
 const worldData = require('../world.json');
+const { gql } = require('apollo-server-express');
 const pusher = require('./pusher').pusher;
 
-const GraphqlSchema = `
+const GraphqlSchema = gql`
 type Door {
     name: ID!
     state: String!
