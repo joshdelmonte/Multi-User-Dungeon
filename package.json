@@ -20,7 +20,6 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
-    "gh-pages": "^5.0.0",
-    "mongoose": "^6.9.0"
+    "gh-pages": "^5.0.0"
   }
 }
