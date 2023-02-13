@@ -5,7 +5,7 @@
   "main": "server/server.js",
   "homepage": "https://joshdelmonte.github.io/Multi-User-Dungeon",
   "scripts": {
-    "start": "cd pusher-mud-backend && node server --ignore client",
+    "start": "cd pusher-mud-backend && node server",
     "develop": "concurrently \"cd pusher-mud-backend && npm run start\" \"cd pusher-mud-frontend && npm start\"",
     "install": "cd pusher-mud-backend && npm i && cd ../pusher-mud-frontend && npm i",
     "seed": "cd pusher-mud-backend && npm run seed",
