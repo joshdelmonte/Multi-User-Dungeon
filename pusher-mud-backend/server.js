@@ -1,7 +1,7 @@
 const express = require('express');
-const ApolloServer = require('apollo-server-express');
+const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
-const authMiddleware = require('./routes/pusher');
+const { authMiddleware } = require('./routes/pusher');
 
 //this has to link to the qraphql folder
 const { typeDefs, resolvers } = require('./routes/graphql');
@@ -23,8 +23,8 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.get('/', (req, res) => {
-  // res.sendFile(path.join(__dirname, '../pusher-mud-frontend/public/index.html'));
-  res.sendFile(path.join(__dirname, '../pusher-mud-frontend/build/index.html'));
+  res.sendFile(path.join(__dirname, '../pusher-mud-frontend/public/index.html'));
+  // res.sendFile(path.join(__dirname, '../pusher-mud-frontend/build/index.html'));
 });
 
 // Create a new instance of an Apollo server with the GraphQL schema
