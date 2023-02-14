@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
-  "homepage": "https://joshdelmonte.github.io/Multi-User-Dungeon",
+  "homepage": "https://fast-hamlet-37820.herokuapp.com/",
   "scripts": {
     "start": "cd pusher-mud-backend && node server",
     "develop": "concurrently \"cd pusher-mud-backend && npm run start\" \"cd pusher-mud-frontend && npm start\"",
