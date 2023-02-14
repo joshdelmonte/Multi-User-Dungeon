@@ -1,5 +1,5 @@
 const express = require('express');
-const { ApolloServer } = require('apollo-server-express');
+import { ApolloServer } from '@apollo/server';
 const path = require('path');
 const { authMiddleware } = require('./routes/pusher');
 
